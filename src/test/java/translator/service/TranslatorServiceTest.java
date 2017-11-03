@@ -55,7 +55,7 @@ public class TranslatorServiceTest {
 
     @Test
     public void translateSameLanguageTest() throws Exception {
-	String text = "This assignment was not troublesome at all"
+	String text = "This assignment was not troublesome at all";
         TranslatedText translatedText = translatorService.translate("en", "en", text);
         assertEquals(text , translatedText.getTranslation());
     }
